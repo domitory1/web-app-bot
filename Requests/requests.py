@@ -1,3 +1,5 @@
+# Добавить except во все функции
+
 import mysql.connector
 
 def connect_to_db():
