@@ -23,7 +23,7 @@ def insert_user_id_in_db(user_id, phone_number):
    conn = connect_to_db()
    cursor = conn.cursor(buffered=True)
    try:
-      cursor.execute(f'INSERT INTO users (`UserId`, `PhoneNumber`) VALUES ({user_id}, {phone_number})')
+      cursor.execute(f'INSERT INTO users (`UserId`, `NumberPhone`) VALUES ({user_id}, {phone_number})')
       conn.commit()
       return True
    finally:
